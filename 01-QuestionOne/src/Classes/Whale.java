@@ -1,5 +1,8 @@
 package Classes;
 
+import java.util.Collections;
+import java.util.Comparator;
+
 public class Whale extends Animal {
 	
 	private String mainOcean;
@@ -76,6 +79,38 @@ public class Whale extends Animal {
             System.out.println("Length       :" + this.getLength());
             System.out.println("------------------------------------");
     	}
+    	
+    }
+    
+    //Method to display the Fast whales
+    public void displayFastest() {
+    	
+    	
+    	//W.I.P
+    	//I need to pull the value out of the array for max speed using the Collections.max
+//    	if() {
+//    		System.out.println("------------------------------------");
+//            System.out.println("Whale Name   :" + this.getName());
+//            System.out.println("Main Ocean   :" + this.getMainOcean());
+//            System.out.println("Weight (tonnes :)" + this.getWeight());
+//            System.out.println("Max Speed    :" + this.getMaxSpeed());
+//            System.out.println("Length       :" + this.getLength());
+//            System.out.println("------------------------------------");
+//    	}
+    	
+    }
+    
+    //Method to display the average length of whales
+    public void displayAverageLengthWhale() {
+    	
+    	//W.I.P
+    	
+    }
+    
+    //Method to display the heaviest whales
+    public void displayHeaviestWhale() {
+    	
+    	//W.I.P
     	
     }
 }
