@@ -54,11 +54,28 @@ public class Whale extends Animal {
 	//Method to display whale class
     public void displayWhale()
     {
+    	System.out.println("------------------------------------");
         System.out.println("Whale Name   :" + this.getName());
         System.out.println("Main Ocean   :" + this.getMainOcean());
         System.out.println("Weight (tonnes :)" + this.getWeight());
         System.out.println("Max Speed    :" + this.getMaxSpeed());
         System.out.println("Length       :" + this.getLength());
+        System.out.println("------------------------------------");
 
+    }
+    
+    //Method to display the Whales in the Atlantic
+    public void displayAtlantic() {
+    	
+    	if(this.getMainOcean() == "Atlantic") {
+    		System.out.println("------------------------------------");
+            System.out.println("Whale Name   :" + this.getName());
+            System.out.println("Main Ocean   :" + this.getMainOcean());
+            System.out.println("Weight (tonnes :)" + this.getWeight());
+            System.out.println("Max Speed    :" + this.getMaxSpeed());
+            System.out.println("Length       :" + this.getLength());
+            System.out.println("------------------------------------");
+    	}
+    	
     }
 }

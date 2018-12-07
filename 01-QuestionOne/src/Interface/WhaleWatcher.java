@@ -17,6 +17,9 @@ public class WhaleWatcher {
 		whales.add(new Whale("Sperm", "Atlantic", 1900, 20, 40));
 		whales.add(new Whale("Humpback", "Antartic", 919, 13, 13));
 		
+		displayWhale();
+		//atlanticWhales();
+		
 	}
 	
 	
@@ -24,15 +27,22 @@ public class WhaleWatcher {
 	public static void displayWhale() {
 		
 		for(Whale w:whales) {
-			System.out.println("-----------------------------------");
-	        System.out.println("Whale Name   :" + w.getName());
-	        System.out.println("Main Ocean   :" + w.getMainOcean());
-	        System.out.println("Weight (tonnes :)" + w.getWeight());
-	        System.out.println("Max Speed    :" + w.getMaxSpeed());
-	        System.out.println("Length       :" + w.getLength());
-	        System.out.println("-----------------------------------");
+			
+			w.displayWhale();
+			
         }
 		
+	}
+	
+	//Method to display Atlantic Whales
+	public static void atlanticWhales() {
+		
+		for(Whale w:whales) {
+
+			w.displayAtlantic();
+
+        }
+
 	}
 	
 	
